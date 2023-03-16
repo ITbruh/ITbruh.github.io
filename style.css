@@ -284,9 +284,17 @@ header {
 
 .truba {
     position: relative;
-    bottom: 780px;
-    left: 410px;
+    bottom: 460px;
+    left: 625px;
     z-index: 0;
+    filter: drop-shadow(0px 0px 92px rgba(255, 255, 255, 1.25));
+}
+
+.fortrub {
+    position: relative;
+    bottom: 780px;
+    left: 300px;
+    z-index: -1;
 }
 
 .getPriceBtn {
@@ -982,4 +990,30 @@ footer {
     position: relative;
     bottom: 230px;
     left: 675px;
+}
+
+@media screen and (max-width: 1450px) {
+    .truba {
+        width: 500px;
+        height: 300px;
+        bottom: 444px;
+    }
+
+    .img1, .img2 {
+        left: 155px;
+    }
+
+    .img3 {
+        left: 205px;
+    }
+
+    .img4 {
+        left: 245px;
+    }
+
+    .howLong img {
+        width: 350px;
+        height: 330px;
+        padding-left: 25px;
+    }
 }
