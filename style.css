@@ -992,6 +992,10 @@ footer {
     left: 675px;
 }
 
+.howLong img {
+    padding-left: 25px;
+}
+
 @media screen and (max-width: 1450px) {
     .truba {
         width: 500px;
@@ -999,7 +1003,8 @@ footer {
         bottom: 444px;
     }
 
-    .img1, .img2 {
+    .img1,
+    .img2 {
         left: 155px;
     }
 
