@@ -1,15 +1,15 @@
 <?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+  $phone = $_POST['phone'];
 
-if(isset($_POST['email'])) {
-    $email_to = "rskankov@gmail.com"; // адрес получателя
-    $email_subject = "Проверка"; // тема письма
-    $email_from = $_POST['rskankov@gmail.com']; // адрес отправителя
+  // Отправка письма
+  $to = 'rskankov@example.com';
+  $subject = 'Номер телефона';
+  $message = 'Номер телефона: ' . $phone;
+  $headers = 'From: rskankov@example.com' . "\r\n" .
+    'Reply-To: rskankov@example.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
 
-    $email_message = "Текст письма."; // текст письма
-
-    // Отправка письма с помощью функции mail()
-    mail($email_to, $email_subject, $email_message, "From: ".$email_from);
-
-    echo "Сообщение отправлено!";
+  mail($to, $subject, $message, $headers);
 }
 ?>
