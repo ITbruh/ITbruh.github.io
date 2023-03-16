@@ -1,0 +1,985 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+​
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+​ body {
+    line-height: 1;
+}
+
+​ ol,
+ul {
+    list-style: none;
+}
+
+​ blockquote,
+q {
+    quotes: none;
+}
+
+​ blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+.container {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 1150px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.first__screen {
+    background: url(imgs/bg1.png) no-repeat center top;
+    background-size: cover;
+    max-height: 930px;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 18px;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo p {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-top: 23px;
+}
+
+.info {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+
+.info p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    padding-top: 23px;
+}
+
+.info a {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    padding-top: 23px;
+}
+
+.call {
+    cursor: pointer;
+    margin-top: -22px;
+    position: relative;
+    z-index: 10;
+}
+
+.text__align {
+    text-align: right;
+}
+
+.menu {
+    background: linear-gradient(90.21deg, #F8F8F8 4.75%, rgba(248, 248, 248, 0.84) 102.89%);
+    position: relative;
+    z-index: 10;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+
+.menu ul li {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #161B1A;
+    transition: 0.3s ease-in-out;
+}
+
+.activeHover {
+    color: #9E1935 !important;
+    font-weight: 700 !important;
+    transition: 0.3s ease-in-out;
+}
+
+.whatWeDo {
+    padding-top: 67px;
+}
+
+.whatWeDo h1 {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+
+.whatWeDo h4 {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 152.4%;
+    color: #FFFFFF;
+    padding-top: 28px;
+}
+
+.garanties {
+    display: flex;
+    padding-top: 60px;
+}
+
+.garanties img {
+    margin-top: -15px;
+    margin-bottom: 41px;
+}
+
+.descrip {
+    display: flex;
+    margin-bottom: 26px;
+}
+
+.descrip svg {
+    margin-right: 11px;
+    padding-top: 11px;
+}
+
+.descrip p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 152.4%;
+    color: #FFFFFF;
+}
+
+.truba {
+    position: relative;
+    bottom: 780px;
+    left: 410px;
+    z-index: 0;
+}
+
+.getPriceBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 22px 55px;
+    background: #9E1935;
+    border-radius: 8px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 43px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    margin-right: -50px;
+    position: relative;
+    left: 190px;
+    z-index: 10;
+}
+
+.bg2 {
+    background: url(imgs/bg2.jpg) no-repeat center top;
+    background-size: cover;
+}
+
+.table__screen {
+    padding-bottom: 114px;
+}
+
+.table__screen h1 {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+    color: #161B1A;
+    padding-top: 55px;
+}
+
+.table__self {
+    padding-top: 52px;
+    display: grid;
+    margin: 0 auto;
+}
+
+.prob {
+    padding-top: 90px !important;
+}
+
+.table__screen h1:last-child {
+    padding-top: 100px;
+}
+
+.getprice__block {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.getprice__block img {
+    margin-left: -145px !important;
+}
+
+.getprice__window {
+    background: linear-gradient(137.79deg, rgba(255, 255, 255, 0.84) 4.03%, rgba(255, 255, 255, 0) 100%);
+    border: 3px solid #E0E0E0;
+    filter: drop-shadow(0px 1px 20px rgba(0, 0, 0, 0.15));
+    backdrop-filter: blur(6px);
+    border-radius: 8px;
+    width: 460px;
+    height: 482px;
+    position: relative;
+    bottom: -60px;
+}
+
+.getPrice__Wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.getprice__window h2 {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #161B1A;
+    padding-top: 50px;
+}
+
+.socmedia {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 41px;
+    margin-bottom: 32px;
+}
+
+.WA {
+    background: #789B56;
+    border-radius: 8px;
+    padding: 5px 28px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.TG {
+    background: #44C3EB;
+    border-radius: 8px;
+    padding: 6px 28px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.yourNumber {
+    background: #e3e3e3;
+    border-radius: 8px;
+    width: 317px;
+    height: 45px;
+    display: grid;
+    margin: 0 auto;
+    padding-left: 22px;
+    border: none;
+    margin-bottom: 34px;
+}
+
+.getYourPrice {
+    background: #9E1935;
+    border-radius: 6px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 32px;
+    color: #FFFFFF;
+    padding: 15px 15px;
+    display: grid;
+    justify-content: center;
+    width: 311px;
+    margin: 0 auto;
+}
+
+.agreement {
+    display: flex;
+    padding-top: 33px;
+    padding-left: 27px;
+}
+
+.agreement p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #8B8B8B;
+    padding-left: 13px;
+}
+
+.checkbox {
+    cursor: pointer;
+}
+
+.specials h1 {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+    color: #161B1A;
+    padding-top: 54px;
+    margin-bottom: 60px;
+}
+
+.colordif {
+    color: #9E1935;
+}
+
+.specials__item {
+    background: url(imgs/bgfor4.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 224px;
+    display: flex;
+    z-index: 10;
+    position: relative;
+    margin-bottom: 55px;
+    box-shadow: 0px 1px 30px 5px rgba(0, 0, 0, 0.1);
+}
+
+.specials__item img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.specials__item p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #161B1A;
+    padding-top: 70px;
+    margin-left: -80px;
+}
+
+.specials__item span {
+    background: linear-gradient(90deg, #1C8320 -5.17%, #3CB532 106.03%);
+    border-radius: 8px;
+    padding: 5px 20px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    top: 20px;
+    left: -20px;
+    height: 20px;
+}
+
+.prob2 {
+    padding-top: 80px !important;
+}
+
+.kalach {
+    color: #2484A3 !important;
+    background: none !important;
+    border-radius: 8px;
+    padding: 0 !important;
+    font-family: 'Raleway' !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 24px !important;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+.prob3 {
+    padding-top: 85px !important;
+}
+
+.img1 {
+    left: 230px;
+    top: 30px;
+}
+
+.img2 {
+    left: 230px;
+    top: 30px;
+}
+
+.img3 {
+    left: 270px;
+    top: 35px;
+}
+
+.img4 {
+    left: 300px;
+    top: 40px;
+    width: 142px !important;
+    height: 143px !important;
+}
+
+.bg4 {
+    background: url(imgs/bgforinfo.png) no-repeat center top;
+    background-size: cover;
+    margin-top: -110px;
+    z-index: 0;
+    position: relative;
+}
+
+.bg4 h1 {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+    color: #161B1A;
+    padding-top: 110px;
+}
+
+.whyWeNeed {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wwnText {
+    padding-top: 60px;
+}
+
+.wwnText p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #161B1A;
+    margin-bottom: 85px;
+}
+
+.sxema {
+    width: 504px;
+    height: 335px;
+    padding-top: 100px;
+}
+
+.bg5 {
+    background: url(imgs/bgbg.jpg) no-repeat center top;
+    background-size: cover;
+}
+
+.bg5 h1 {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+    color: #161B1A;
+    padding-top: 130px;
+}
+
+.g2 {
+    color: #9E1935;
+}
+
+.howLong {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.txt1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #161B1A;
+}
+
+.howMany {
+    padding-top: 37px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.howMany span {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #2D9E2A;
+}
+
+.howMany p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 47px;
+    color: #000000;
+}
+
+.prob5 {
+    padding-left: 76px;
+}
+
+.prob6 {
+    padding-left: 35px;
+}
+
+.prob7 {
+    margin-left: -9px;
+}
+
+.txt2 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #9E1935;
+    padding-top: 68px;
+}
+
+.howLong img {
+    margin-bottom: 160px;
+}
+
+footer {
+    background: url(imgs/bgFoot.jpg) no-repeat center top;
+    background-size: cover;
+}
+
+.contacts h1 {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 50px;
+    color: #FFFFFF;
+    padding-top: 37px;
+    margin-bottom: 39px;
+}
+
+.foot__content {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.map {
+    width: 392px;
+    height: 219px;
+    background: #fff;
+}
+
+.foot__text p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding-top: 38px;
+    padding-left: 100px;
+}
+
+.foot__info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-bottom: 66px;
+}
+
+.foot__info p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    padding-top: 20px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.bigBg {
+    background: url(imgs/bgCatalog.jpg) no-repeat center top;
+    background-size: cover;
+}
+
+.catalog__block h1 {
+    padding-top: 77px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 50px;
+    color: #161B1A;
+    margin-bottom: 78px;
+}
+
+.catalog__block img {
+    display: grid;
+    margin: 0 auto;
+}
+
+.prob__ctl {
+    text-align: center;
+    padding-top: 111px !important;
+}
+
+.GPB__ctl {
+    padding-top: 0 !important;
+    margin-top: -50px;
+}
+
+.uslbg {
+    background: url(imgs/bgforUslugi.jpg) no-repeat center top;
+    background-size: cover;
+}
+
+.uslugi__block {
+    padding-top: 77px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+
+.uslugi__block h1 {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;
+    padding-top: 32px;
+}
+
+.uslugi__block img {
+    filter: drop-shadow(0px 0px 92px rgba(255, 255, 255, 0.25));
+    width: 353px;
+    height: 335px;
+}
+
+.uslugi__items h1 {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: #161B1A;
+    padding-top: 66px;
+}
+
+.uls__items__top {
+    display: flex;
+    justify-content: space-around;
+}
+
+.top {
+    padding-top: 76px;
+}
+
+.bot {
+    padding-top: 29px;
+    margin-bottom: 92px;
+}
+
+.usl__item {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    width: 241px;
+    height: 205px;
+}
+
+.uls__items__top img {
+    display: grid;
+    margin: 0 auto;
+    padding-top: 24px;
+}
+
+.uls__items__top p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #161B1A;
+    padding-top: 20px;
+}
+
+.bgaboutus {
+    background: url(imgs/bgforAboutUs.jpg) no-repeat center top;
+    background-size: cover;
+    max-height: 1250px;
+}
+
+.aboutus__block {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 68px;
+}
+
+.aboutus__text {
+    padding-left: 16px;
+}
+
+.aboutus__text h1 {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: #161B1A;
+}
+
+.AU__prob {
+    padding-left: 15px;
+    padding-top: 50px;
+    position: relative;
+    top: 168px;
+}
+
+.AU__info h1 {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+    padding-top: 189px;
+}
+
+.AU__prob2 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #161B1A;
+    padding-top: 101px;
+}
+
+.AU__prob3 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration-line: underline;
+    color: #9E1935;
+    padding-top: 169px;
+}
+
+.AU__info img {
+    position: relative;
+    left: 652px;
+    bottom: 325px;
+    width: 506px;
+    height: 337px;
+}
+
+.bgcontacts {
+    background: url(imgs/bgforContacts.jpg) no-repeat center top;
+    background-size: cover;
+}
+
+
+
+.contacts__content h1 {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 50px;
+    color: #161B1A;
+    padding-top: 80px;
+}
+
+.content1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #161B1A;
+    padding-top: 54px;
+}
+
+.content2 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #161B1A;
+    padding-top: 38px;
+}
+
+.contacts__content img {
+    position: relative;
+    bottom: 230px;
+    left: 675px;
+}
