@@ -128,7 +128,7 @@ q:after {
 .container {
     margin: 0 auto;
     box-sizing: border-box;
-    width: 1150px;
+    width: 70%;
 }
 
 a {
@@ -362,7 +362,7 @@ header {
     backdrop-filter: blur(6px);
     border-radius: 8px;
     width: 460px;
-    height: 482px;
+    height: 535px;
     position: relative;
     bottom: -60px;
 }
@@ -417,7 +417,7 @@ header {
 .yourNumber {
     background: #e3e3e3;
     border-radius: 8px;
-    width: 317px;
+    width: 288px;
     height: 45px;
     display: grid;
     margin: 0 auto;
