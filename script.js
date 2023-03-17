@@ -25,3 +25,16 @@ call.addEventListener('click', function () {
         behavior: 'smooth'
     });
 });
+
+const menuIcon = document.querySelector('.menu-icon');
+const menuItems = document.querySelector('.menu-items');
+const menuClose = document.querySelector('.cross');
+
+
+menuIcon.addEventListener('click', () => {
+    menuItems.classList.add('show');
+});
+
+menuClose.addEventListener('click', () => {
+    menuItems.classList.remove('show');
+});

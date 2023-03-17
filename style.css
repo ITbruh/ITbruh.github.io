@@ -343,6 +343,7 @@ header {
     padding-top: 52px;
     display: grid;
     margin: 0 auto;
+    width: 100%;
 }
 
 .prob {
@@ -996,6 +997,114 @@ footer {
     padding-left: 25px;
 }
 
+.mobile {
+    display: none;
+}
+
+.hamburger-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .menu-icon {
+    width: 35px;
+    height: 8px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .menu-line {
+    width: 100%;
+    height: 4px;
+    background-color: #912e2e;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu-line:nth-child(2) {
+    top: 10px;
+  }
+  
+  .menu-line:nth-child(3) {
+    top: 20px;
+  }
+  
+  .menu-items {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fff;
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+  }
+  
+  .menu-items li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  
+  .menu-items a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+
+
+.hamburger span {
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #8d1d1d;
+	transition: all 0.5s;
+}
+
+.cross {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    left: 170px;
+    z-index: 100;
+  }
+  
+  .cross::before,
+  .cross::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .cross::before {
+    transform: rotate(45deg);
+  }
+  
+  .cross::after {
+    transform: rotate(-45deg);
+  }
+
+.show {
+    display: block;
+}
+
+.phone-icon {
+    display: none;
+}
+
 @media screen and (max-width: 1450px) {
     .truba {
         width: 500px;
@@ -1020,5 +1129,209 @@ footer {
         width: 350px;
         height: 330px;
         padding-left: 25px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    
+    .container {
+        width: 85%;
+    }
+    
+    .info, .menu, .truba, .themen, .foot__info p, .laptop {
+        display: none;
+    }
+
+    .foot__info a {
+        margin: 0 auto;
+    }
+
+    .phone-icon {
+        display: block;
+        width: 35px;
+        height: 35px;
+        padding-top: 30px;
+    }
+
+    .tel {
+        cursor: pointer;
+    }
+
+    .garanties img {
+        width: 100%;
+    }
+
+    .first__screen {
+        max-height: 1250px;
+    }
+
+    header {
+        padding-bottom: 50px;
+    }
+
+    .whatWeDo {
+        padding-top: 0;
+    }
+
+    .getPriceBtn {
+        display: grid;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .getprice__block {
+        display: block;
+    }
+
+    .getprice__block img {
+        max-width: 100%;
+        margin-left: 0px !important;
+    }
+
+    .getprice__window {
+        max-width: 100%;
+        max-height: 505px;
+    }
+    
+    .specials__item {
+        display: block;
+        height: auto;
+        min-height: 420px;
+    }
+
+    .specials__item p {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        max-width: 90%;
+        margin: 0 auto;
+        margin-left: 0;
+        text-align: center;
+        padding-top: 35px;
+    }
+
+    .specials__item img {
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .prob2, .prob3 {
+        padding-top: 35px !important;
+    }
+
+    .wwnText p {
+        margin-bottom: 40px;
+    }
+
+    .whyWeNeed {
+        display: flex;
+        flex-direction:column-reverse;
+    }
+
+    .sxema {
+        max-width: 100%;
+        padding-top: 0;
+    }
+
+    .bg5 h1 {
+        padding-top: 40px;
+    }
+
+    .howLong {
+        padding-top: 35px;
+    }
+
+    .howMany {
+        flex-direction: column;
+    }
+
+    .howMany p {
+        position: relative;
+        margin: 0 auto;
+        padding-top: 15px;
+    }
+
+    .prob5  {
+        padding-left: 80px;
+    }
+
+    .prob6 {
+        padding-left: 33px;
+    }
+
+    .prob7 {
+        margin-left: 0;
+        padding-left: 5px;
+    }
+
+    .phoneprob {
+        text-align: center;
+    }
+
+    .txt2 {
+        margin-bottom: 40px;
+        padding-top: 45px;
+    }
+
+    .foot__content {
+        flex-direction: column-reverse;
+    }
+
+    .contacts h1 {
+        margin-bottom: 20px;
+    }
+
+    .foot__text {
+        margin-bottom: 25px;
+    }
+
+    .foot__text p {
+        padding-left: 0;
+        padding-top: 32px;
+    }
+
+    .map {
+        max-width: 100%;
+    }
+
+    .whatWeDo h1, .table__screen h1, .specials h1, .bg4 h1, .bg5 h1 {
+        font-size: 36px;
+    }
+
+    .garanties {
+        flex-direction: column;
+    }
+
+    .getYourPrice {
+        max-width: -webkit-fill-available;
+    }
+
+    .hamburger, .mobile {
+        display: block;
+    }
+
+    .laptop {
+        display: none;
+    }
+
+    .hamburger {
+        position: relative;
+        top: 35px;
+    }
+
+    .bg5 h1 {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .getprice__window h2 {
+        font-size: 28px;
+    }
+
+    .WA {
+        padding: 5px 20px;
     }
 }
