@@ -1132,12 +1132,18 @@ footer {
     }
 
     .info,
-    .menu,
-    .truba,
+    .menu, .truba,
     .themen,
     .foot__info p,
-    .laptop {
+    .laptop, .garanties img {
         display: none;
+    }
+
+    .trubaMob {
+        max-width: 100%;
+        bottom: 0;
+        filter: drop-shadow(0px 0px 92px rgba(255, 255, 255, 1.25));
+        margin-bottom: 25px;
     }
 
     .hamburger-menu {
