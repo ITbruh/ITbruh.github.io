@@ -9,23 +9,6 @@ menuHovers.forEach(item => {
     })
 })
 
-const button = document.querySelector('.getPriceBtn')
-const block = document.querySelector('.getprice__block')
-const call = document.querySelector('.call')
-
-
-button.addEventListener('click', function () {
-    block.scrollIntoView({
-        behavior: 'smooth'
-    });
-});
-
-call.addEventListener('click', function () {
-    block.scrollIntoView({
-        behavior: 'smooth'
-    });
-});
-
 const menuIcon = document.querySelector('.menu-icon');
 const menuItems = document.querySelector('.menu-items');
 const menuClose = document.querySelector('.cross');
